@@ -1,13 +1,19 @@
 import React, {useState, useEffect} from 'react'
-import './App.css'
-import AddRestaurant from './components/AddRestaurant'
-import Header from './components/Header'
-import RestaurantList from './components/RestaurantList'
+import '../App.css'
+import AddRestaurant from '../components/AddRestaurant'
+import Header from '../components/Header'
+import RestaurantList from '../components/RestaurantList'
+import {useHistory} from 'react-router-dom'
 
-function App() {
+function RestaurantSignIn() {
+
+  let history = useHistory();
+
+  history.push('/restaurant-sign-in')
+
   const LOCAL_STORAGE_KEY = "restaurants";
   const [restaurants, setRestaurants] = useState([]);
-
+  
   const addRestaurantHandler = (restaurant) => {
     console.log(restaurant);
     setRestaurants([...restaurants, restaurant]);
@@ -35,8 +41,9 @@ function App() {
       <Header />
       <AddRestaurant addRestaurantHandler={addRestaurantHandler} />
       <RestaurantList restaurants={restaurants} getRestaurantId={removeRestaurantHandler}/>
+      <button onClick={history.goBack}>Back</button>
     </div>
   )
 }
 
-export default App;
+export default RestaurantSignIn;
