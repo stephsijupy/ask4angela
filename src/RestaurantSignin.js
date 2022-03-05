@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import './App.css'
 import AddRestaurant from './components/AddRestaurant'
 import Header from './components/Header'
-import guestForm from './guestForm'
 import RestaurantList from './components/RestaurantList'
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
   return (
     <div className='ui container'>
       <Header />
-      <guestForm guestForm={guestForm}/>
       <AddRestaurant addRestaurantHandler={addRestaurantHandler} />
       <RestaurantList restaurants={restaurants} getRestaurantId={removeRestaurantHandler}/>
     </div>
@@ -42,4 +40,3 @@ function App() {
 }
 
 export default App;
-
