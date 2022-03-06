@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function passReq2Restaurant() {
+        document.getElementById("venue").innerHTML
+        document.getElementById("tableNum").innerHTML
+        //check venue = current restaurant
+        //if yes
+        //pass tableNum to restaurant list of A4As
+    }
+</script>
+</head>
+
+<body>
+    <h2>A4A Request</h2>
+    <form>
+        <label for="venue">Which restaurant/bar are you at?</label><br>
+
+        <select name="venue" id="venue">
+            <option value="568">568</option>
+            <option value="metric">Metric</option>
+            <option value="unionBar">Union Bar</option>
+        </select><br><br>
+
+        <label for="tableNum">What's your table number?</label><br>
+
+        <input type="number" id="tableNum" name="tableNum" min="1"><br><br>
+
+        <input type="button" onclick="passReq2Restaurant" value="Ask 4 Angela">
+    </form>
+</body>
+</html>
