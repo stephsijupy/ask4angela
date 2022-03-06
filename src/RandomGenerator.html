@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyword Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../src/key-icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <span class="btn active" onclick="document.getElementById('text').style.fontSize='1em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize='1.25em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize='1.75em'">A</span>
+        </div>
+        <div class="content" id="text">
+            <h1>Remember and use this keyword!</h1>
+            <h2 id="demo"></h2>
+            <h3>The question would be: How was your day?</h3>
+        </div>
+    </div>
+    
+<script>
+    items = ['Wonderful','Marvellous','Beautiful','Great','Good','Amazing','Best','Excellent','Terrific','Fine','Awesome','Spectacular','Stunning','Astonishing','Excellent','Briliant','Gorgeous','Splendid'];
+    item = "Keyword: "+items[Math.floor(Math.random()*items.length)];
+    document.getElementById("demo").innerHTML = item;
+    let buttons = document.querySelector('.buttons');
+    let btn=buttons.querySelectorAll('.btn');
+    for (var i=0;i<btn.length;i++){
+        btn[i].addEventListener('click',function(){
+            let current = document.getElementsByClassName('active');
+            current[0].classname=current[0].className.replace("active","");
+            this.className+=" active";
+        })
+    }
+</script>
+<style>
+    h1{text-align:center;}
+    h2{text-align:center;}
+    h3{text-align:center;}
+    
+</style>
+</body>
+</html>
