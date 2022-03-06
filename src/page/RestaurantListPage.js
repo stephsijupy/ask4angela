@@ -8,7 +8,7 @@ export default function RestaurantListPage() {
     <div className='ui container'>
       <Header />
       <div className="ui main">
-        THIS IS LIST OF ANGELA SUPPORTED RESTAURANTS
+        <h1>THIS IS LIST OF ANGELA SUPPORTED RESTAURANTS</h1>
         <RestaurantList restaurants={restaurants}/>
       </div>
     </div>

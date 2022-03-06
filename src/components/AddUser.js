@@ -23,7 +23,7 @@ class AddUser extends React.Component {
         <h2>Which restaurant/bar are you at?</h2>
         <form className="ui form" onSubmit={this.add}>
           <div className="field">
-            <label>Benue</label>
+            <label>Venue</label>
             <input
               type="text"
               name="venue"

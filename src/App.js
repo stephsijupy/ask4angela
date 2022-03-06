@@ -17,7 +17,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/restaurant-sign-in' element={<RestaurantSignIn />} />
             <Route path='/user-sign-in' element={<UserSignIn />} />
-            <Route path='/word-generator' element={<WordGenerator />} />
+            <Route path='/word-generator/:username' element={<WordGenerator />} />
             <Route path='/restaurant-list' element={<RestaurantListPage />} />
             <Route path='*' element={<Error />} />
         </Routes>
