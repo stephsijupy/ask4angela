@@ -1,0 +1,52 @@
+p {
+    padding-top: 15px;
+    padding-right:400px;
+    padding-bottom: 15px;
+    padding-left: 400px;
+    padding: 30px;
+    background-color:rgb(226, 228, 235);
+}
+
+/*.unidentified_user {
+    position:absolute;
+    left:80px;
+}
+
+.Amelia {
+    position:absolute;
+    left:80px;
+}
+  
+.Franjo {
+    position:absolute;
+    left:80px;
+}*/
+
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+  }
+
+body {
+    background-image: url("../AskForAngela/background.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+/*.unidentified_user {
+  width: 100px;
+}
+
+.Amelia {
+  width: 100px;
+}
+
+.Franjo {
+  width: 100px;
+}
+*/
