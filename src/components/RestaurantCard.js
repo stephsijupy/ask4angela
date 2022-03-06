@@ -6,14 +6,15 @@ const RestaurantCard = (props) => {
     <div className='item'>
      <div className='content'>
         <div className='header'>{name}</div>
-        <div>{password}</div>
-     </div>
-      <i 
+        {/* <div>{password}</div> 
+        <i 
         className='trash alternate outline icon' 
         style={{color: "red", marginTop:"7px"}}
         onClick={() => props.clickHandler(id)}
-      ></i>
-    </div>)
+        ></i> */}
+      </div>
+    </div>
+    )
 }
 
 export default RestaurantCard
